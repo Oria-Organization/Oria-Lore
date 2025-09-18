@@ -1,0 +1,23 @@
+body {font-family: Arial, sans-serif;background: #0f0f0f;color: #e0e0e0;margin: 0;padding: 2em}
+h1 {color: #ff4b4b;}
+a {color: #5ab0f7;text-decoration: none;transition: color 0.3s;}
+a:hover {text-decoration: underline;color: #ffffff;}
+
+.section {margin-top: 2em;}
+details {border: 1px solid #444;border-radius: 8px;margin: 10px 0;overflow: hidden;transition: all 0.3s ease;background: #1a1a1a;}
+summary {padding: 10px;cursor: pointer;font-weight: bold;list-style: none;position: relative;}
+summary::after {content: "▶";position: absolute;right: 10px;transition: transform 0.3s ease;}
+details[open] summary::after {transform: rotate(90deg);}
+details div {max-height: 0;overflow: hidden;padding: 0 10px;transition: max-height 0.5s ease, padding 0.3s ease;}
+details[open] div {max-height: 500px;padding: 10px;}
+
+.tab {display: flex;border-bottom: 1px solid #444;}
+.tab button {background: none;border: none;outline: none;padding: 10px 20px;cursor: pointer;color: #e0e0e0;font-weight: bold;transition: color 0.3s, border-bottom 0.3s;}
+.tab button:hover {color: #ff4d4d;}
+.tab button.active {border-bottom: 3px solid #ff4d4d;color: #ff4d4d;}
+.tabcontent {display: none;padding: 20px;animation: fadeEffect 0.5s;}
+@keyframes fadeEffect {from {opacity: 0;}to {opacity: 1;}}
+
+.bloc {display: flex;align-items: center;justify-content: space-between;gap: 20px;}
+.bloc .texte {flex: 1;}
+.bloc .image img {max-width: 300px;height: auto;border-radius: 8px;}
