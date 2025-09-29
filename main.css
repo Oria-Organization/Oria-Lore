@@ -16,6 +16,7 @@ details[open] div {max-height: none;padding: 10px;}
 .tab button:hover {color: #ff4d4d;}
 .tab button.active {border-bottom: 3px solid #ff4d4d;color: #ff4d4d;}
 .tabcontent {display: none;padding: 20px;animation: fadeEffect 0.5s;}
+.tabcontent1, .tabcontent2 { display: none; }
 @keyframes fadeEffect {from {opacity: 0;}to {opacity: 1;}}
 
 .bloc {display: flex;align-items: center;justify-content: space-between;gap: 20px;}
