@@ -2,7 +2,7 @@ body {font-family: Arial, sans-serif;background: #0f0f0f;color: #e0e0e0;margin: 
 h1 {color: #ff4b4b;}
 a {color: #5ab0f7;text-decoration: none;transition: color 0.3s;}
 a:hover {text-decoration: underline;color: #ffffff;}
-footer p:first-child {text-align: center;margin: 0.5em 0;}
+footer p:last-child {text-align: center;margin: 0.5em 0;}
 
 .section {margin-top: 2em;}
 details {border: 1px solid #444;border-radius: 8px;margin: 10px 0;overflow: hidden;transition: all 0.3s ease;background: #1a1a1a;}
