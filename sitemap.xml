@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Fichiers principaux -->
+  <url>
+    <loc>https://oria-organization.github.io/Oria-Lore/index.html</loc>
+  </url>
+
+  <!-- Fichiers secondaires -->
+  <url>
+    <loc>https://oria-organization.github.io/Oria-Lore/Autres/droits_oria.html</loc>
+  </url>
+
+  <!-- Empire Nexara -->
+  <url>
+    <loc>https://oria-organization.github.io/Oria-Lore/Nexara/rolesorganisation.html</loc>
+  </url>
+  <url>
+    <loc>https://oria-organization.github.io/Oria-Lore/Nexara/history.html</loc>
+  </url>
+  <url>
+    <loc>https://oria-organization.github.io/Oria-Lore/Nexara/habitant.html</loc>
+  </url>
+  <url>
+    <loc>https://oria-organization.github.io/Oria-Lore/Nexara/credit.html</loc>
+  </url>
+  <url>
+    <loc>https://oria-organization.github.io/Oria-Lore/Nexara/arbres.html</loc>
+  </url>
+
+  <!-- Organisation et rôles -->
+  <url>
+    <loc>https://oria-organization.github.io/Oria-Lore/Nexara/RolesOrganisation/roles.html</loc>
+  </url>
+  <url>
+    <loc>https://oria-organization.github.io/Oria-Lore/Nexara/RolesOrganisation/organisation.html</loc>
+  </url>
+
+  <!-- Infos des organisations -->
+  <url>
+    <loc>https://oria-organization.github.io/Oria-Lore/Nexara/RolesOrganisation/OrganisationInfo/scp.html</loc>
+  </url>
+  <url>
+    <loc>https://oria-organization.github.io/Oria-Lore/Nexara/RolesOrganisation/OrganisationInfo/osi.html</loc>
+  </url>
+
+</urlset>
