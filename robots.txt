@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://oria-organization.github.io/Oria-Lore/sitemap.xml
+Sitemap: https://oria-organization.github.io/Oria-Lore/sitemap.txt
