@@ -23,3 +23,8 @@ details[open] div {max-height: none;padding: 10px;}
 .bloc {display: flex;align-items: center;justify-content: space-between;gap: 20px;}
 .bloc .texte {flex: 1;}
 .bloc .image img {max-width: 300px;height: auto;border-radius: 8px;}
+
+.nav {list-style-type: none;margin: 0;padding: 0;background-color: #333333;display: flex;}
+.nav li a {display: block;color: white;padding: 14px 16px;text-decoration: none;}
+.nav li a:hover:not(.active) {background-color: #111111;}
+.nav li a.active {background-color: #000334;}
