@@ -3,6 +3,7 @@
 ## Sommaire
 - Présentation
 - Informations du projet
+- Contenu du github
 - Crédits
 
 ## Présentation
@@ -25,6 +26,46 @@ Objectifs principaux:
 - Documenter et organiser le lore de manière claire et accessible pour tous.
 
 Oria n’est pas seulement une histoire à lire, c’est un monde vivant, où chaque élément a sa place et contribue à l’expérience globale.
+
+
+## Structures du REPO
+```
+Oria-Lore/
+├── .nojekyll
+├── index.html
+├── empire-nexara.html
+├── main.css
+├── main.js
+├── robots.txt
+├── sitemap.xml
+├── README.md
+├── version.md
+├── Nexara/
+  ├── RolesOrganisation/
+    ├── OrganisationInfo/
+      ├── bpc.html
+      ├── osi.html
+      └── scp.html
+    ├── organisation.html
+    └── roles.html
+  ├── credit.html
+  ├── abres.html
+  ├── habitant.html
+  └── rolesorganisation.html
+├── Images/
+  └── Nexara/
+    ├── Famille/
+      ├── Famille0.1.png
+      └── Famille0.2.png
+    ├── Logo/
+      ├── O.S.I..png
+      ├── bpc.png
+      ├── scp.png
+    ├── Empire Nexara.png
+    └── hierarchie.png
+└── Autres/
+
+```
 
 
 ## Crédits
