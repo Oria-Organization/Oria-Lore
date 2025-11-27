@@ -34,8 +34,6 @@ Oria-Lore/
 ├── .nojekyll
 ├── index.html
 ├── empire-nexara.html
-├── main.css
-├── main.js
 ├── robots.txt
 ├── sitemap.xml
 ├── README.md
@@ -64,7 +62,11 @@ Oria-Lore/
     ├── empire-nexara.png
     └── hierarchie.png
   └── base.txt
-└── Autres/
+├── assets/
+  ├── main.css
+  └── main.js
+└── autres/
+  └── droits_oria.html
 
 ```
 
