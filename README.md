@@ -3,7 +3,7 @@
 ## Sommaire
 - Présentation
 - Informations du projet
-- Contenu du github
+- Structure du REPO
 - Crédits
 
 ## Présentation
