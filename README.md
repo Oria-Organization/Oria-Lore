@@ -73,6 +73,7 @@ Oria-Lore/
 
 Projet développé par divin_hunter
 Contact : mondeoria.official@gmail.com
-© 2025 Oria - Empire Nexara
 
 Merci à tous ceux qui contribuent à l’évolution du lore et à la vie du monde d’Oria.
+
+© 2025 Oria - Empire Nexara
