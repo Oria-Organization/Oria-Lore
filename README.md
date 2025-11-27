@@ -40,9 +40,9 @@ Oria-Lore/
 ├── sitemap.xml
 ├── README.md
 ├── version.md
-├── Nexara/
-  ├── RolesOrganisation/
-    ├── OrganisationInfo/
+├── nexara/
+  ├── rolesorganisation/
+    ├── organisationInfo/
       ├── bpc.html
       ├── osi.html
       └── scp.html
@@ -52,16 +52,16 @@ Oria-Lore/
   ├── abres.html
   ├── habitant.html
   └── rolesorganisation.html
-├── Images/
-  └── Nexara/
-    ├── Famille/
-      ├── Famille0.1.png
-      └── Famille0.2.png
-    ├── Logo/
-      ├── O.S.I..png
+├── images/
+  └── nexara/
+    ├── famille/
+      ├── famille0.1.png
+      └── famille0.2.png
+    ├── logo/
+      ├── osi.png
       ├── bpc.png
       ├── scp.png
-    ├── Empire Nexara.png
+    ├── empire-nexara.png
     └── hierarchie.png
   └── base.txt
 └── Autres/
