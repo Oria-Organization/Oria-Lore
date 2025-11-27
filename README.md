@@ -63,6 +63,7 @@ Oria-Lore/
       ├── scp.png
     ├── Empire Nexara.png
     └── hierarchie.png
+  └── base.txt
 └── Autres/
 
 ```
