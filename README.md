@@ -32,41 +32,7 @@ Oria n’est pas seulement une histoire à lire, c’est un monde vivant, où ch
 ## Structures du REPO
 ```
 Oria-Lore/
-├── .nojekyll
-├── index.html
-├── empire-nexara.html
-├── robots.txt
-├── sitemap.xml
-├── README.md
-├── nexara/
-  ├── rolesorganisation/
-    ├── organisationInfo/
-      ├── bpc.html
-      ├── osi.html
-      └── scp.html
-    ├── organisation.html
-    └── roles.html
-  ├── credit.html
-  ├── abres.html
-  ├── habitant.html
-  └── rolesorganisation.html
-├── images/
-  └── nexara/
-    ├── famille/
-      ├── famille0.1.png
-      └── famille0.2.png
-    ├── logo/
-      ├── osi.png
-      ├── bpc.png
-      ├── scp.png
-    ├── empire-nexara.png
-    └── hierarchie.png
-  └── base.txt
-├── assets/
-  ├── main.css
-  └── main.js
-└── autres/
-  └── droits_oria.html
+
 ```
 
 ## Fonctionnement des versions
