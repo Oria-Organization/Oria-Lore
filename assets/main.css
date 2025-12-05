@@ -1,3 +1,4 @@
+/* Base */
 body {
     font-family: Arial, sans-serif;
     background: #0f0f0f;
@@ -6,9 +7,7 @@ body {
     padding: 2em;
 }
 
-h1 {
-    color: #ff4b4b;
-}
+h1 { color: #ff4b4b; }
 
 a {
     color: #5ab0f7;
@@ -22,15 +21,10 @@ a:hover {
 }
 
 /* Pied de page */
-footer p:last-child {
-    text-align: center;
-    margin: 0.5em 0;
-}
+footer p:last-child { text-align: center; margin: 0.5em 0; }
 
 /* Sections / details */
-.section {
-    margin-top: 2em;
-}
+.section { margin-top: 2em; }
 
 details {
     border: 1px solid #444;
@@ -56,9 +50,7 @@ summary::after {
     transition: transform 0.3s ease;
 }
 
-details[open] summary::after {
-    transform: rotate(90deg);
-}
+details[open] summary::after { transform: rotate(90deg); }
 
 details div {
     max-height: 0;
@@ -67,17 +59,10 @@ details div {
     transition: max-height 0.5s ease, padding 0.3s ease;
 }
 
-/* Quand ouvert, montrer le contenu */
-details[open] div {
-    max-height: none;
-    padding: 10px;
-}
+details[open] div { max-height: none; padding: 10px; }
 
 /* Tabs */
-.tab {
-    display: flex;
-    border-bottom: 1px solid #444;
-}
+.tab { display: flex; border-bottom: 1px solid #444; }
 
 .tab button {
     background: none;
@@ -90,31 +75,16 @@ details[open] div {
     transition: color 0.3s, border-bottom 0.3s;
 }
 
-.tab button:hover {
-    color: #ff4d4d;
-}
+.tab button:hover { color: #ff4d4d; }
 
 .tab button.active {
     border-bottom: 3px solid #ff4d4d;
     color: #ff4d4d;
 }
 
-/* Compatibilité avec l'ancienne classe utilisée ailleurs */
-.tabcontent {
-    display: none;
-    padding: 20px;
-    animation: fadeEffect 0.5s;
-}
+.tabcontent, .tabcontent1, .tabcontent2 { display: none; padding: 20px; animation: fadeEffect 0.5s; }
 
-.tabcontent1,
-.tabcontent2 {
-    display: none;
-}
-
-@keyframes fadeEffect {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+@keyframes fadeEffect { from {opacity:0;} to{opacity:1;} }
 
 /* Blocs flexibles */
 .bloc {
@@ -122,11 +92,10 @@ details[open] div {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    position: relative; /* Nécessaire pour sous-menu */
 }
 
-.bloc .texte {
-    flex: 1;
-}
+.bloc .texte { flex: 1; }
 
 .bloc .image img {
     max-width: 300px;
@@ -134,7 +103,7 @@ details[open] div {
     border-radius: 8px;
 }
 
-/* Navigation */
+/* NAV */
 .nav {
     list-style-type: none;
     margin: 0;
@@ -143,37 +112,59 @@ details[open] div {
     display: flex;
 }
 
-.nav li a {
+.nav li {
+    position: relative;
+}
+
+.nav li a, .bloc_base {
     display: block;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
 }
 
-.nav li a:hover:not(.active) {
+.nav li a:hover:not(.active), .bloc:hover .bloc_base {
     background-color: #111111;
 }
 
-.nav li a.active {
-    background-color: #000334;
+.nav li a.active { background-color: #000334; }
+
+/* Menu déroulant */
+.bloc-contenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: #333333;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 10;
 }
 
-/* Responsive */
+.bloc-contenu a {
+    padding: 12px 16px;
+}
+
+.bloc-contenu a:hover { background-color: #111111; }
+
+/* Affichage au hover desktop */
+@media (min-width: 601px) {
+    .bloc:hover .bloc-contenu { display: flex; }
+}
+
+/* Responsive mobile */
 @media (max-width: 600px) {
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .nav li a {
+    .nav { flex-direction: column; align-items: flex-start; }
+    .nav li a, .bloc_base {
         width: 100%;
-        padding: 16px;
         text-align: left;
         box-sizing: border-box;
     }
-
-    /* Pour petits écrans, empile les blocs */
-    .bloc {
-        flex-direction: column;
-        gap: 12px;
-    }
+    .bloc { flex-direction: column; gap: 0; }
+    .bloc-contenu { position: relative; top: auto; left: auto; box-shadow: none; }
 }
