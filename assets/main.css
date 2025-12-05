@@ -1,0 +1,15 @@
+body {
+    background-color: linear-gradient(to bottom right,#0c0b0b, #4f0005);
+
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+
+    width: 90%;
+    max-width: 800px;
+    margin: 2% auto;
+    padding: 2rem;
+}
+
+h1,h2 {
+    color: #FF0000;
+}
