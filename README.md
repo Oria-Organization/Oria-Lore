@@ -34,8 +34,6 @@ Oria-Lore/
 ├── .nojekyll
 ├── index.html
 ├── empire-nexara.html
-├── robots.txt
-├── sitemap.xml
 ├── README.md
 ├── nexara/
 │ ├── rolesorganisation/
