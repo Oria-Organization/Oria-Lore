@@ -1,5 +1,5 @@
 body {
-    background-color: linear-gradient(to bottom right,#0c0b0b, #4f0005);
+    background: linear-gradient(to bottom right,#0c0b0b, #4f0005);
 
     color: #FFFFFF;
     font-family: 'Arial', sans-serif;
