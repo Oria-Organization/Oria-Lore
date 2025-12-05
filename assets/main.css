@@ -1,32 +1,179 @@
-body {font-family: Arial, sans-serif;background: #0f0f0f;color: #e0e0e0;margin: 0;padding: 2em}
-h1 {color: #ff4b4b;}
-a {color: #5ab0f7;text-decoration: none;transition: color 0.3s;}
-a:hover {text-decoration: underline;color: #ffffff;}
-footer p:last-child {text-align: center;margin: 0.5em 0;}
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 2em;
+}
 
-.section {margin-top: 2em;}
-details {border: 1px solid #444;border-radius: 8px;margin: 10px 0;overflow: hidden;transition: all 0.3s ease;background: #1a1a1a;}
-summary {padding: 10px;cursor: pointer;font-weight: bold;list-style: none;position: relative;}
-summary::after {content: "▶";position: absolute;right: 10px;transition: transform 0.3s ease;}
-details[open] summary::after {transform: rotate(90deg);}
-details div {max-height: 0;overflow: hidden;padding: 0 10px;transition: max-height 0.5s ease, padding 0.3s ease;}
-details[open] div {max-height: none;padding: 10px;}
+h1 {
+    color: #ff4b4b;
+}
 
-.tab {display: flex;border-bottom: 1px solid #444;}
-.tab button {background: none;border: none;outline: none;padding: 10px 20px;cursor: pointer;color: #e0e0e0;font-weight: bold;transition: color 0.3s, border-bottom 0.3s;}
-.tab button:hover {color: #ff4d4d;}
-.tab button.active {border-bottom: 3px solid #ff4d4d;color: #ff4d4d;}
-.tabcontent {display: none;padding: 20px;animation: fadeEffect 0.5s;}
-.tabcontent1, .tabcontent2 { display: none; }
-@keyframes fadeEffect {from {opacity: 0;}to {opacity: 1;}}
+a {
+    color: #5ab0f7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
 
-.bloc {display: flex;align-items: center;justify-content: space-between;gap: 20px;}
-.bloc .texte {flex: 1;}
-.bloc .image img {max-width: 300px;height: auto;border-radius: 8px;}
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
 
-.nav {list-style-type: none;margin: 0;padding: 0;background-color: #333333;display: flex;}
-.nav li a {display: block;color: white;padding: 14px 16px;text-decoration: none;}
-.nav li a:hover:not(.active) {background-color: #111111;}
-.nav li a.active {background-color: #000334;}
-@media (max-width: 600px) {.nav {flex-direction: column;align-items: flex-start;}
-.nav li a {width: 100%;padding: 16px;text-align: left;box-sizing: border-box;}}
+/* Pied de page */
+footer p:last-child {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+/* Sections / details */
+.section {
+    margin-top: 2em;
+}
+
+details {
+    border: 1px solid #444;
+    border-radius: 8px;
+    margin: 10px 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: #1a1a1a;
+}
+
+summary {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    position: relative;
+}
+
+summary::after {
+    content: "▶";
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+details div {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+}
+
+/* Quand ouvert, montrer le contenu */
+details[open] div {
+    max-height: none;
+    padding: 10px;
+}
+
+/* Tabs */
+.tab {
+    display: flex;
+    border-bottom: 1px solid #444;
+}
+
+.tab button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #e0e0e0;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.tab button:hover {
+    color: #ff4d4d;
+}
+
+.tab button.active {
+    border-bottom: 3px solid #ff4d4d;
+    color: #ff4d4d;
+}
+
+/* Compatibilité avec l'ancienne classe utilisée ailleurs */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    animation: fadeEffect 0.5s;
+}
+
+.tabcontent1,
+.tabcontent2 {
+    display: none;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Blocs flexibles */
+.bloc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bloc .texte {
+    flex: 1;
+}
+
+.bloc .image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Navigation */
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    display: flex;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+    background-color: #111111;
+}
+
+.nav li a.active {
+    background-color: #000334;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav li a {
+        width: 100%;
+        padding: 16px;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    /* Pour petits écrans, empile les blocs */
+    .bloc {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
