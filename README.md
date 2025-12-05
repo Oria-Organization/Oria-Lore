@@ -3,6 +3,8 @@
 ## Sommaire
 - Présentation
 - Informations du projet
+- Structure du REPO
+- Fonctionnement des versions
 - Crédits
 
 ## Présentation
@@ -27,10 +29,68 @@ Objectifs principaux:
 Oria n’est pas seulement une histoire à lire, c’est un monde vivant, où chaque élément a sa place et contribue à l’expérience globale.
 
 
+## Structures du REPO
+```
+Oria-Lore/
+├── .nojekyll
+├── index.html
+├── empire-nexara.html
+├── robots.txt
+├── sitemap.xml
+├── README.md
+├── nexara/
+  ├── rolesorganisation/
+    ├── organisationInfo/
+      ├── bpc.html
+      ├── osi.html
+      └── scp.html
+    ├── organisation.html
+    └── roles.html
+  ├── credit.html
+  ├── abres.html
+  ├── habitant.html
+  └── rolesorganisation.html
+├── images/
+  └── nexara/
+    ├── famille/
+      ├── famille0.1.png
+      └── famille0.2.png
+    ├── logo/
+      ├── osi.png
+      ├── bpc.png
+      ├── scp.png
+    ├── empire-nexara.png
+    └── hierarchie.png
+  └── base.txt
+├── assets/
+  ├── main.css
+  └── main.js
+└── autres/
+  └── droits_oria.html
+```
+
+## Fonctionnement des versions
+Le système de versions de ce dépôt fonctionne ainsi :
+*Les versions du site sont affichées sur la page d’accueil (Index / Home).*
+
+### Version X.0.0.0
+Quand X augmente, cela signifie qu’un changement majeur a été effectué sur le site.
+
+### Version 0.X.0.0
+Quand X augmente, cela indique des modifications mineures, mais tout de même importantes.
+
+### Version 0.0.X.0
+Quand X augmente, cela correspond à de petites améliorations ou ajouts.
+
+### Version 0.0.0.X
+Quand X augmente, cela représente des corrections ou des ajustements.
+
+
 ## Crédits
 
 Projet développé par divin_hunter
 Contact : mondeoria.official@gmail.com
-© 2025 Oria - Empire Nexara
 
 Merci à tous ceux qui contribuent à l’évolution du lore et à la vie du monde d’Oria.
+
+© 2025 Oria - Empire Nexara
