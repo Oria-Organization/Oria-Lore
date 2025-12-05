@@ -1,15 +1,22 @@
-body {
-    background: linear-gradient(to bottom right,#0c0b0b, #4f0005);
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    background: linear-gradient(to bottom right, #0c0b0b, #4f0005);
     color: #FFFFFF;
     font-family: 'Arial', sans-serif;
+}
 
+.espace_texte {
     width: 90%;
     max-width: 800px;
     margin: 2% auto;
     padding: 2rem;
 }
 
-h1,h2 {
+h1, h2 {
     color: #FF0000;
 }
