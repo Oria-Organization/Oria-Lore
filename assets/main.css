@@ -152,6 +152,20 @@ details[open] div { max-height: none; padding: 10px; }
 
 .bloc-contenu a:hover { background-color: #111111; }
 
+/* Sous-menu : s'affiche à droite du parent */
+.bloc-contenu .bloc-contenu.sous-menu {
+    top: 0;
+    left: 100%; /* s'affiche à droite du parent */
+    position: absolute;
+    display: none;
+    min-width: 200px;
+}
+
+/* Affichage au hover du parent */
+.bloc-contenu .bloc:hover > .sous-menu {
+    display: block;
+}
+
 /* Affichage au hover desktop */
 @media (min-width: 601px) {
     .bloc:hover .bloc-contenu { display: flex; }
