@@ -9,10 +9,9 @@ body {
     color: #FFFFFF;
     font-family: 'Arial', sans-serif;
 }
-
 main {
-    width: 90%;
-    max-width: 800px;
+    width: 95%;
+    max-width: 1000px;
     margin: 2% auto;
     padding: 2rem;
 }
