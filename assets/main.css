@@ -10,7 +10,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-.espace_texte {
+main {
     width: 90%;
     max-width: 800px;
     margin: 2% auto;
