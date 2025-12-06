@@ -72,6 +72,12 @@ header li a.active {
   text-decoration: none; 
 }
 
+.bloc-interne li {
+  color: white; 
+  display: block;   /* Affichage en bloc pour prendre toute la largeur */
+  text-decoration: none; 
+}
+
 .bloc:hover .bloc-interne {
   display: block; /* Affiche le menu au survol */
 }
