@@ -33,6 +33,7 @@ header {
   display: flex;
   flex-wrap: wrap; /* Adaptation */
   top: 0;
+  position: sticky;
 }
 
 header li a {
