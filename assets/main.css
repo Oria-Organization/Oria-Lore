@@ -32,6 +32,7 @@ header {
   list-style-type: none; /* Pour éviter d'avoir des puces */
   display: flex;
   flex-wrap: wrap; /* Adaptation */
+  top: 0;
 }
 
 header li a {
