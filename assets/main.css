@@ -118,4 +118,8 @@ header li a.active {
     background-color: #550000; /* comme header actif */
 }
 
-
+.corps-page {
+  display: flex;       /* aligne sidebar + contenu horizontal */
+  margin: 0;
+  min-height: calc(100vh - 50px); /* prend toute la hauteur restante après header */
+}
