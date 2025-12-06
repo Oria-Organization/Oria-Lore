@@ -2,12 +2,16 @@
 body {
     background: linear-gradient(to bottom right, #0b0b0b, #5f0000);
     color: #FFFFFF;
+    display: flex;
+    margin: 0;   
 }
 main {
     width: 95%;
     max-width: 1000px;
     margin: 2% auto;
     padding: 2rem;
+    flex: 1;
+    padding: 10px;
 }
 
 footer {
@@ -80,58 +84,11 @@ header li a.active {
 }
 /* ============================================= */
 
-
-
-/* Layout simple : sidebar à gauche + contenu à droite */
-.layout-simple {
-  display: flex;
-  gap: 1.5rem;
-  width: 95%;
-  max-width: 1200px;
-  margin: 2% auto;
-  padding: 0 1rem 2rem;
-  box-sizing: border-box;
-}
-
 /* Sidebar */
-.left-menu {
-  width: 200px;            /* largeur fixe, simple */
-  min-width: 160px;
-  background: rgba(20,0,0,0.45);
-  padding: 10px;
-  border-radius: 6px;
+.sidebar {
+  width: 200px;        /* largeur fixe */
   position: sticky;
-  top: 90px;               /* laisse la place au header */
-  height: calc(100vh - 110px);
-  overflow-y: auto;
+  top: 0;              /* reste visible en scroll */
+  padding: 10px;
 }
 
-.left-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.left-menu li {
-  margin: 8px 0;
-}
-
-.left-menu a {
-  color: #bfe6ff;
-  text-decoration: none;
-  display: block;
-  padding: 6px 8px;
-  border-radius: 4px;
-}
-
-.left-menu a:hover {
-  background: rgba(255,255,255,0.06);
-  color: #fff;
-}
-
-/* Contenu principal */
-.main-content {
-  flex: 1 1 0;
-  background: transparent; /* tu peux garder ton style actuel */
-  padding: 6px 10px;
-}
