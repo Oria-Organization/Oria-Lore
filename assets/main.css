@@ -6,17 +6,20 @@ body {
     margin: 0;   
 }
 main {
-    width: 95%;
-    max-width: 1000px;
-    margin: 2% auto;
-    padding: 2rem;
-    flex: 1;
-    padding: 10px;
+  width: 95%;
+  max-width: 1000px;
+  margin: 2% auto;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;  /* footer en bas du contenu */
+  box-sizing: border-box;
 }
 
 footer {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
 }
 
 h1, h2 {
@@ -86,35 +89,30 @@ header li a.active {
 /* ============================================= */
 
 /* Sidebar à gauche, comme le header */
-.barre-laterale {
-    width: 200px;               /* largeur fixe */
-    background: none;  /* même couleur que header actif */
-    display: flex;
-    flex-direction: column;     /* menu vertical */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: sticky;           /* reste visible en scroll */
-    top: 0;
-    height: 100vh;              /* prend toute la hauteur */
+.sidebar {
+  width: 200px;
+  background-color: none;
+  padding: 10px;
+  position: sticky;
+  top: 0;
 }
 
-.barre-laterale li {
+.sidebar li {
     width: 100%;
 }
 
-.barre-laterale a {
+.sidebar a {
     display: block;
     padding: 14px 16px;        /* même que header */
     text-decoration: none;
     color: white;
 }
 
-.barre-laterale a:hover:not(.active) {
+.sidebar a:hover:not(.active) {
     background-color: #770000; /* comme header hover */
 }
 
-.barre-laterale a.active {
+.sidebar a.active {
     background-color: #550000; /* comme header actif */
 }
 
