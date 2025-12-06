@@ -85,14 +85,37 @@ header li a.active {
 }
 /* ============================================= */
 
-/* Sidebar */
-.sidebar {
-  width: 200px;        /* largeur fixe */
-  position: sticky;
-  top: 0;              /* reste visible en scroll */
-  padding: 10px;
-  display: flex;
-  margin: 0;
-  width: 200px; 
+/* Sidebar à gauche, comme le header */
+.barre-laterale {
+    width: 200px;               /* largeur fixe */
+    background: none;  /* même couleur que header actif */
+    display: flex;
+    flex-direction: column;     /* menu vertical */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: sticky;           /* reste visible en scroll */
+    top: 0;
+    height: 100vh;              /* prend toute la hauteur */
 }
+
+.barre-laterale li {
+    width: 100%;
+}
+
+.barre-laterale a {
+    display: block;
+    padding: 14px 16px;        /* même que header */
+    text-decoration: none;
+    color: white;
+}
+
+.barre-laterale a:hover:not(.active) {
+    background-color: #770000; /* comme header hover */
+}
+
+.barre-laterale a.active {
+    background-color: #550000; /* comme header actif */
+}
+
 
