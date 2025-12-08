@@ -22,6 +22,10 @@ p, h3, h4 {
   color:#ffffff;
 }
 
+.encadre {
+ border: 3px solid #ffffff;
+}
+
 .lien-off a{
     text-decoration: none;
     color: #5ab0f7;text-decoration: none;transition: color 0.3s;}
@@ -48,7 +52,7 @@ header li a {
 }
 
 header li a:hover:not(.active) {
-  background-color: #770000; /* Couleur quand la souris passe dessus */
+  background-color: #1b1b1b; /* Couleur quand la souris passe dessus */
 }
 
 header li a.active {
