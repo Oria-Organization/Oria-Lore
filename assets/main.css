@@ -1,7 +1,6 @@
 /* CSS principal: aux balises */
 body {
     background: linear-gradient(to bottom right, #0b0b0b, #5f0000);
-    color: #FFFFFF;
 }
 main {
     width: 95%;
@@ -17,6 +16,10 @@ footer {
 
 h1, h2 {
     color: #FF0000;
+}
+
+p {
+  color:#ffffff;
 }
 
 .lien-off a{
@@ -120,7 +123,6 @@ header li a.active {
   padding: 15px;
   border: 1px solid #444;
   border-radius: 6px;
-  color:#FFFFFF;
 }
 
 /* Contenu actif */
