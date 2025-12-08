@@ -110,14 +110,13 @@ header li a.active {
 
 /* Onglet actif */
 .tab-btn.actif {
-  background: #ffffff;
-  color: #000;
+  background: #550000;
 }
 
 /* Contenu caché */
 .tab-contenu {
   display: none;
-  background: #fff;
+  background: none;
   color: #000;
   padding: 15px;
   border: 1px solid #444;
