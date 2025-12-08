@@ -84,44 +84,55 @@ header li a.active {
 
 /* === ONGLETS === */
 
+/* Conteneur des onglets */
 .tabs {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Masquer les boutons radio */
+/* Cacher les boutons radio */
 .tabs input[type="radio"] {
   display: none;
 }
 
-/* Style des boutons onglets */
+/* Style des menus d’onglets */
 .tabs label {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #2b2b2b;
   color: white;
   cursor: pointer;
-  border-radius: 6px 6px 0 0;
-  margin-right: 5px;
   display: inline-block;
+  border: 1px solid #444;
+  border-bottom: none;        /* pour que ça colle au contenu comme un vrai onglet */
+  border-radius: 6px 6px 0 0; /* bord haut arrondi comme Chrome */
+  margin-right: 4px;
+  transition: background 0.2s;
 }
 
-/* Onglet actif = changement de couleur */
+/* Onglet hover (passe la souris) */
+.tabs label:hover {
+  background-color: #3a3a3a;
+}
+
+/* Onglet actif */
 .tabs input[type="radio"]:checked + label {
-  background-color: #770000;
+  background-color: #ffffff;
+  color: #000;
+  border-bottom: 1px solid white; /* disparition du bord en bas → comme Chrome */
 }
 
-/* Le contenu des onglets */
+/* Le contenu */
 .tab-content {
   display: none;
   padding: 20px;
-  background: #222;
-  color: white;
+  background: #ffffff;
+  color: #000;
+  border: 1px solid #444;
   border-radius: 0 6px 6px 6px;
-  margin-top: -6px;
 }
 
-/* Afficher le contenu du bon onglet */
+/* Affichage du bon contenu */
 #tab1:checked ~ #content1 {
   display: block;
 }
