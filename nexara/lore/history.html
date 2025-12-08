@@ -24,18 +24,7 @@
 <body>
     <header>
         <li><a href="index.html">Home</a></li>
-        <li class="bloc">
-          <a class="active" href="nexara/nexara-empire.html">Empire Nexara</a>
-          <div class="bloc-interne">
-            <a href="nexara/rp/famille.html">Famille RP ></a>
-            <a href="nexara/rp/discord.html">Serveur Discord ></a>
-            <a class="active" href="nexara/lore/history.html">Histoire ></a>
-            <a href="nexara/lore/org.html">Organisation Impériale ></a>
-            <a href="nexara/lore/hierarchie_politique.html">Hiérarchie Politique ></a>
-            <a href="nexara/lore/hierarchie_militaire.html">Hiérarchie Militaire ></a>
-            <a href="nexara/lore/questions.html">Questions divers ></a>
-          </div>
-        </li>
+        <li><a class="active" href="nexara/nexara-empire.html">Empire Nexara</a></li>
         <li><a href="dieux.html">Monde des Dieux</a></li>
         <li><a href="credit.html">Crédits et Droits d'auteurs</a></li>
         <li class="bloc">
@@ -47,7 +36,13 @@
         </li>
     </header>
     <main>
+        <input type="radio" name="tab-group" id="tab1" checked>
+        <label for="tab1">Histoire</label>
+        <input type="radio" name="tab-group" id="tab2" checked>
+        <label for="tab2">Test</label>
+
         <!-- Introduction -->
+        <div class="tab-content" id="content1">
         <h1 id="C0">Histoire de la nation</h1>
         <h2>Introduction</h2>
         <p>Bonjour chers lecteurs, lectrices afin de vous emmenez dans notre histoire, laissez nous vous faire une petite introduction de que ce qu'est l'Empire Nexara:<br>
@@ -128,6 +123,10 @@
         Et c'est par cela que la période la plus violente en termes d'éradiquation eu lieu dans l'histoire, une population complète fut éradiquer vers -255, en laissant aucun survivant...</p>
 
         <h3 id="C1IIB">B/ La Grande Guerre</h3>
+        </div>
+        <div class="tab-content" id="content2">
+        <p>test</p>
+        </div>
         <footer>
             <p>© 2025 Oria - Empire Nexara</p>
         </footer>

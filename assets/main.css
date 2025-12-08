@@ -81,3 +81,51 @@ header li a.active {
   background-color: #770000;
 }
 /* ============================================= */
+
+/* === ONGLETS === */
+
+.tabs {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Masquer les boutons radio */
+.tabs input[type="radio"] {
+  display: none;
+}
+
+/* Style des boutons onglets */
+.tabs label {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+/* Onglet actif = changement de couleur */
+.tabs input[type="radio"]:checked + label {
+  background-color: #770000;
+}
+
+/* Le contenu des onglets */
+.tab-content {
+  display: none;
+  padding: 20px;
+  background: #222;
+  color: white;
+  border-radius: 0 6px 6px 6px;
+  margin-top: -6px;
+}
+
+/* Afficher le contenu du bon onglet */
+#tab1:checked ~ #content1 {
+  display: block;
+}
+#tab2:checked ~ #content2 {
+  display: block;
+}
+/* ============================================= */
