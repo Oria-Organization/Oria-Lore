@@ -18,7 +18,7 @@ h1, h2 {
     color: #FF0000;
 }
 
-p {
+p, h3, h4 {
   color:#ffffff;
 }
 
