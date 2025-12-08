@@ -117,7 +117,6 @@ header li a.active {
 .tab-contenu {
   display: none;
   background: none;
-  color: #000;
   padding: 15px;
   border: 1px solid #444;
   border-radius: 6px;
