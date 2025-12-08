@@ -37,6 +37,7 @@ header {
   flex-wrap: wrap; /* Adaptation */
   top: 0;
   position: sticky;
+  background-color: #0b0b0b;
 }
 
 header li a {
@@ -66,7 +67,7 @@ header li a.active {
 .bloc-interne {
   display: none; /* Caché par défaut */
   position: absolute; 
-  background-color: none;
+  background-color: #0b0b0b;
   min-width: 200px;
 }
 
