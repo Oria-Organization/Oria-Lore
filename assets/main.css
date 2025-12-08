@@ -90,8 +90,7 @@ header li a.active {
 /* Conteneur des onglets */
 .onglets {
   display: flex;
-  gap: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 /* Boutons d’onglets */
@@ -104,6 +103,7 @@ header li a.active {
   cursor: pointer;
   font-size: 16px;
   user-select: none;
+  margin: 0;
 }
 
 /* Hover */
