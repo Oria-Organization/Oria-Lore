@@ -41,9 +41,14 @@ Oria-Lore/
 │       ├── famille/
 │       └── logo/
 │           └── nexara-logo.png
+├── autres/
+│   ├── colab.html
+│   ├── credits.html
+│   └── droits.html
 └── assets/
     ├── main.css
     └── main.js
+
 ```
 
 ## Fonctionnement des versions
