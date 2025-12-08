@@ -85,59 +85,47 @@ header li a.active {
 /* === ONGLETS === */
 
 /* Conteneur des onglets */
-.tabs {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+.onglets {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 
-/* Cacher les boutons radio */
-.tabs input[type="radio"] {
-  display: none;
-}
-
-/* Style des titres d’onglets */
-.tabs label {
-  padding: 12px 22px;
-  background-color: #2b2b2b;
+/* Boutons d’onglets */
+.tab-btn {
+  padding: 12px 20px;
+  background: #2b2b2b;
   color: white;
-  cursor: pointer;
-  display: inline-block;
   border: 1px solid #444;
-  border-bottom: none;
-  border-radius: 6px 6px 0 0;
-  margin-right: 4px;
-  user-select: none;   /* pour éviter la sélection de texte */
-  transition: background 0.2s;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
 }
 
 /* Hover */
-.tabs label:hover {
-  background-color: #3a3a3a;
+.tab-btn:hover {
+  background: #3b3b3b;
 }
 
 /* Onglet actif */
-.tabs input[type="radio"]:checked + label {
-  background-color: #ffffff;  /* couleur visible → carré */
-  color: #000;
-  border-bottom: 1px solid white; /* se fond avec le contenu */
-}
-
-/* Le bloc de contenu */
-.tab-content {
-  display: none;
-  padding: 20px;
+.tab-btn.actif {
   background: #ffffff;
   color: #000;
-  border: 1px solid #444;
-  border-radius: 0 6px 6px 6px;
 }
 
-/* Affichage du bon contenu selon l’onglet */
-#tab1:checked ~ #content1 {
-  display: block;
+/* Contenu caché */
+.tab-contenu {
+  display: none;
+  background: #fff;
+  color: #000;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 6px;
 }
-#tab2:checked ~ #content2 {
+
+/* Contenu actif */
+.tab-contenu.actif {
   display: block;
 }
 
