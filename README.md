@@ -32,7 +32,18 @@ Oria n’est pas seulement une histoire à lire, c’est un monde vivant, où ch
 ## Structures du REPO
 ```
 Oria-Lore/
-
+├── .nojekyll
+├── README.md
+├── index.html
+├── nexara/
+│   ├── empire-nexara.html
+│   └── images/
+│       ├── famille/
+│       └── logo/
+│           └── nexara-logo.png
+└── assets/
+    ├── main.css
+    └── main.js
 ```
 
 ## Fonctionnement des versions
