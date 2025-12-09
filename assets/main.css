@@ -1,24 +1,24 @@
 /* CSS principal: aux balises */
 body {
-    background: linear-gradient(to bottom right, #0b0b0b, #5f0000);
-    font-family: 'Spectral', serif;
-    line-height: 1.6;
+  background: linear-gradient(to bottom right, #0b0b0b, #5f0000);
+  font-family: 'Spectral', serif;
+  line-height: 1.6;
 }
 main {
-    width: 95%;
-    max-width: 1000px;
-    margin: 2% auto;
-    padding: 2rem;
+  width: 95%;
+  max-width: 1000px;
+  margin: 2% auto;
+  padding: 2rem;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 h1, h2 {
-    color: #FF0000;
-    font-family: 'Marcellus', serif;
-    letter-spacing: 0.5px;
+  color: #FF0000;
+  font-family: 'Marcellus', serif;
+  letter-spacing: 0.5px;
 }
 
 p, h3, h4, li {
@@ -26,33 +26,37 @@ p, h3, h4, li {
 }
 
 .encadre {
- border: 3px solid #ffffff;
- padding: 10px;
+  border: 3px solid #ffffff;
+  padding: 10px;
 }
 
 .lien-off a{
-    text-decoration: none;
-    color: #5ab0f7;text-decoration: none;transition: color 0.3s;}
+  text-decoration: none;
+  color: #5ab0f7;text-decoration: none;transition: color 0.3s;}
 .lien-off a:hover {
-    text-decoration: underline;color: #ffffff;
+  text-decoration: underline;color: #ffffff;
 }
 
 /* === Barre de navigation === */
 header {
   list-style-type: none; /* Pour éviter d'avoir des puces */
-  display: flex;
   flex-wrap: wrap; /* Adaptation */
+
+  display: flex;
   top: 0;
   position: sticky;
+
   background-color: #0b0b0b;
 }
 
 header li a {
   display: block;
+
   color: white;
-  padding: 14px 16px;
-  text-decoration: none;
   font-family: 'Marcellus', serif;
+  text-decoration: none;
+
+  padding: 14px 16px;
 }
 
 header li a:hover:not(.active) {
@@ -66,23 +70,28 @@ header li a.active {
 /* Menu déroulant */
 .bloc_base {
   color: white;
+  font-family: 'Marcellus', serif;
+
   padding: 14px 16px;
-  font-family: 'Arial';
   border: none;
+
   cursor: pointer; /* Curseur en forme de main */
 }
 
 .bloc-interne {
+  background-color: #0b0b0b;
+
   display: none; /* Caché par défaut */
   position: absolute; 
-  background-color: #0b0b0b;
+
   min-width: 200px;
 }
 
 .bloc-interne a {
   color: white; 
+  text-decoration: none;
+
   display: block;   /* Affichage en bloc pour prendre toute la largeur */
-  text-decoration: none; 
 }
 
 .bloc:hover .bloc-interne {
@@ -105,14 +114,18 @@ header li a.active {
 /* Boutons d’onglets */
 .tab-btn {
   padding: 12px 20px;
+  font-size: 16px;
+  margin: 0;
+
   background-color: #0b0b0b;
   color: white;
+  font-family: 'Marcellus', serif;
+
   border: 1px solid #2b2b2b;
   border-radius: 6px;
+
   cursor: pointer;
-  font-size: 16px;
   user-select: none;
-  margin: 0;
 }
 
 /* Hover */
@@ -128,8 +141,10 @@ header li a.active {
 /* Contenu caché */
 .tab-contenu {
   display: none;
-  background: none;
+
   padding: 15px;
+  
+  background: none;
   border: 1px solid #2b2b2b;
   border-radius: 6px;
 }
