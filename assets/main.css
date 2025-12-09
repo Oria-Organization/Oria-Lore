@@ -47,7 +47,7 @@ p, h3, h4, li {
   text-decoration: underline;color: #ffffff;
 }
 
-.lien-nothing a {
+.lien-nothing div a {
   text-decoration: none;
   font-family: 'Spectral', serif;
   color:#ffffff;
