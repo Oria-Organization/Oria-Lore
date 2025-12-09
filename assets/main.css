@@ -1,6 +1,6 @@
 /* CSS principal: aux balises */
 body {
-  background: linear-gradient(to bottom right, #0b0b0b, #5f0000);
+  background: linear-gradient(135deg, #0b0b0b 0%, #1a0000 40%, #5f0000 100%);
   font-family: 'Spectral', serif;
   line-height: 1.6;
 }
@@ -143,7 +143,7 @@ header li a.active {
   display: none;
 
   padding: 15px;
-  
+
   background: none;
   border: 1px solid #2b2b2b;
   border-radius: 6px;
