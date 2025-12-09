@@ -1,6 +1,7 @@
 /* CSS principal: aux balises */
 body {
     background: linear-gradient(to bottom right, #0b0b0b, #5f0000);
+    font-family: Arial, Helvetica, sans-serif;
 }
 main {
     width: 95%;
@@ -11,7 +12,6 @@ main {
 
 footer {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, h2 {
@@ -36,7 +36,6 @@ p, h3, h4, li {
 
 /* === Barre de navigation === */
 header {
-  font-family: Arial, Helvetica, sans-serif;
   list-style-type: none; /* Pour éviter d'avoir des puces */
   display: flex;
   flex-wrap: wrap; /* Adaptation */
