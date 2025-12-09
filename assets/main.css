@@ -28,6 +28,10 @@ p, h3, h4, li {
   color:#ffffff;
 }
 
+
+
+
+
 /* === Class === */
 .encadre {
   border: 3px solid #ffffff;
@@ -48,6 +52,12 @@ p, h3, h4, li {
   font-family: 'Spectral', serif;
   color:#ffffff;
 }
+
+/* ============================================= */
+
+
+
+
 
 /* === Barre de navigation === */
 header {
@@ -114,6 +124,10 @@ header li a.active {
   background-color: #770000;
 }
 /* ============================================= */
+
+
+
+
 
 /* === ONGLETS === */
 
