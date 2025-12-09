@@ -28,16 +28,25 @@ p, h3, h4, li {
   color:#ffffff;
 }
 
+/* === Class === */
 .encadre {
   border: 3px solid #ffffff;
   padding: 10px;
 }
 
+/* Liens modifications */
 .lien-off a{
   text-decoration: none;
-  color: #5ab0f7;text-decoration: none;transition: color 0.3s;}
+  color: #5ab0f7;text-decoration: none;transition: color 0.3s;
+}
 .lien-off a:hover {
   text-decoration: underline;color: #ffffff;
+}
+
+.lien-nothing a {
+  text-decoration: none;
+  font-family: 'Spectral', serif;
+  color:#ffffff;
 }
 
 /* === Barre de navigation === */
