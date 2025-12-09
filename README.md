@@ -48,7 +48,6 @@ Oria-Lore/
 └── assets/
     ├── main.css
     └── main.js
-
 ```
 
 ## Fonctionnement des versions
