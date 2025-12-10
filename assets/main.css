@@ -48,11 +48,6 @@ p, h3, h4, li {
   display: flex;
 }
 
-.gauche_droite img {
-    width: 150px; /* taille réduite */
-    height: auto;
-}
-
 .encadre {
   border: 3px solid #ffffff;
   padding: 10px;
