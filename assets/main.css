@@ -46,6 +46,9 @@ p, h3, h4, li {
 /* === Class === */
 .gauche_droite {
   display: flex;
+  gap: 20px;           /* espace entre texte et image */
+  align-items: center; /* centre verticalement image et paragraphe */
+  flex-wrap: wrap;  
 }
 
 .encadre {
