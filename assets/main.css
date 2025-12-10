@@ -48,8 +48,8 @@ p, h3, h4, li {
   display: flex;
 }
 
-img {
-    width: 40%;   /* 40% de la largeur du parent */
+.gauche_droite img {
+    width: 150px; /* taille réduite */
     height: auto;
 }
 
