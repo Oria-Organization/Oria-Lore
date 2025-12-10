@@ -44,25 +44,33 @@ p, h3, h4, li {
 
 
 /* === Class === */
+.gauche_droite {
+  display: flex;
+}
 
 .encadre {
   border: 3px solid #ffffff;
   padding: 10px;
+  list-style-type: none;
 }
 
 /* Liens modifications */
-.lien-off a{
+main a {
   text-decoration: none;
   color: #5ab0f7;text-decoration: none;transition: color 0.3s;
 }
-.lien-off a:hover {
+main a:hover {
   text-decoration: underline;color: #ffffff;
 }
 
 .lien-nothing a {
-  text-decoration: none;
   font-family: 'Spectral', serif;
   color:#ffffff;
+}
+
+.lien-nothing a:hover {
+  text-decoration: none;
+  font-family: 'Spectral', serif;
 }
 
 /* ============================================= */
@@ -133,7 +141,7 @@ header li a.active {
 }
 
 .bloc:hover .bloc_base {
-  background-color: #770000;
+  background-color: #1b1b1b;
 }
 /* ============================================= */
 
