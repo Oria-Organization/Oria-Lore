@@ -54,6 +54,11 @@ p, h3, h4, li {
   list-style-type: none;
 }
 
+.encadre_regle {
+  border: 5px double #FFFF00;
+  margin: 20px;
+}
+
 /* Liens modifications */
 main a {
   text-decoration: none;
@@ -198,6 +203,33 @@ header li a.active {
 /* Contenu actif */
 .tab-contenu.actif {
   display: block;
+}
+
+/* ============================================= */
+
+
+
+
+
+/* === BARRE DETAILS === */
+/* détails */
+details {
+  background: none;
+  border: 5px solid #2b2b2b;
+  border-radius: 8px;
+}
+
+details div {
+  padding: 0 10px;
+}
+
+/* summary */
+summary {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+  position: relative;
 }
 
 /* ============================================= */
