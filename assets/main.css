@@ -52,8 +52,7 @@ p, h3, h4, li {
 
 .encadre {
   border: 3px solid #ffffff;
-  padding: 10px;
-  list-style-type: none;
+  padding: 30px;
 }
 
 .encadre_regle {
