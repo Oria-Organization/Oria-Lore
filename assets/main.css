@@ -47,22 +47,13 @@ p, h3, h4, li {
 .gauche_droite {
   display: flex;
   gap: 20px;           /* espace entre texte et image */
-  align-items: center; /* centre verticalement image et paragraphe */
-  flex-wrap: wrap;  
-}
-
-.encadre_image {
-  border: 3px solid #ffffff;
-  padding: 10px;
-  list-style-type: none;
-  margin-right: 20px;
+  align-items: center; /* centre verticalement image et paragraphe */  
 }
 
 .encadre {
   border: 3px solid #ffffff;
   padding: 10px;
   list-style-type: none;
-  margin-right: 20px;
 }
 
 .encadre_regle {
