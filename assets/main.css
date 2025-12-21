@@ -75,6 +75,10 @@ h3 {
   justify-content: center; /* centre horizontalement */
   align-items: center;     /* centre verticalement si nécessaire */
   margin: 20px 0;          /* espace au-dessus et en dessous */
+
+  border: 1px solid #ffffff; /* bordure fine et blanche */
+  border-radius: 8px;         /* coins arrondis */
+  padding: 5px;   
 }
 
 /* Liens modifications */
