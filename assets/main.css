@@ -73,13 +73,16 @@ h3 {
 /* widget */
 .widget-lore {
   display: flex;
+  justify-content: space-between; /* sépare les iframes à gauche et à droite */
+  gap: 20px;                       /* espace fixe entre elles */
 
-  border: 2px solid #ffffff; /* bordure autour du widget */
-  border-radius: 10px;       /* coins arrondis */
-  overflow: hidden;           /* évite que l'iframe dépasse de la bordure */
-  width: fit-content;         /* s’adapte à la taille de l’iframe */
+  border: 2px solid #ffffff;       /* bordure autour des deux widgets */
+  border-radius: 10px;             
+  overflow: hidden;                
 
-  transition: transform 0.3s; /* pour un hover si tu veux */
+  padding: 10px;                   /* espace interne pour que ça respire */
+  width: max-content;              /* s’adapte aux iframes */
+  margin: 0 auto;                  /* centre le conteneur sur la page */
 }
 
 .widget-lore:hover {
@@ -89,6 +92,24 @@ h3 {
 .widget-lore iframe {
   display: block;  /* supprime le petit espace en dessous */
   border: none;    /* supprime la bordure par défaut de l'iframe */
+}
+
+.members-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.member img {
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 
