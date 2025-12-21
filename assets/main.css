@@ -70,16 +70,28 @@ h3 {
   text-decoration: underline;
 }
 
+/* widget */
 .widget-lore {
-  display: flex;           /* active le flexbox */
-  justify-content: center; /* centre horizontalement */
-  align-items: center;     /* centre verticalement si nécessaire */
-  margin: 20px 0;          /* espace au-dessus et en dessous */
+  display: flex;
+  justify-content: center; /* centre le widget horizontalement */
 
-  border: 1px solid #ffffff; /* bordure fine et blanche */
-  border-radius: 8px;         /* coins arrondis */
-  padding: 5px;   
+  border: 2px solid #ffffff; /* bordure autour du widget */
+  border-radius: 10px;       /* coins arrondis */
+  overflow: hidden;           /* évite que l'iframe dépasse de la bordure */
+  width: fit-content;         /* s’adapte à la taille de l’iframe */
+  
+  transition: transform 0.3s; /* pour un hover si tu veux */
 }
+
+.widget-lore:hover {
+  transform: scale(1.02); /* effet léger au survol */
+}
+
+.widget-lore iframe {
+  display: block;  /* supprime le petit espace en dessous */
+  border: none;    /* supprime la bordure par défaut de l'iframe */
+}
+
 
 /* Liens modifications */
 main a {
