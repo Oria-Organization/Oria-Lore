@@ -73,13 +73,12 @@ h3 {
 /* widget */
 .widget-lore {
   display: flex;
-  justify-content: center; /* centre le widget horizontalement */
 
   border: 2px solid #ffffff; /* bordure autour du widget */
   border-radius: 10px;       /* coins arrondis */
   overflow: hidden;           /* évite que l'iframe dépasse de la bordure */
   width: fit-content;         /* s’adapte à la taille de l’iframe */
-  
+
   transition: transform 0.3s; /* pour un hover si tu veux */
 }
 
