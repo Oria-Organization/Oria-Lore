@@ -70,6 +70,23 @@ h3 {
   text-decoration: underline;
 }
 
+/* widget */
+.widget-lore {
+  border: 3px solid #FF0000;       /* rouge comme tes titres */
+  border-radius: 15px;             /* coins arrondis */
+  padding: 10px;
+  background: rgba(11,11,11,0.8);  /* semi-transparent pour effet mystère */
+  width: 360px;                     /* un peu plus large que ton iframe */
+  height: 520px;                    /* laisse un peu de marge */
+  margin: 20px auto;                /* centré horizontalement */
+  box-shadow: 0 0 20px #550000;     /* léger glow rouge pour effet RP */
+  transition: transform 0.3s;
+}
+
+.widget-lore:hover {
+  transform: scale(1.02);           /* petit effet zoom au survol */
+}
+
 /* Liens modifications */
 main a {
   text-decoration: none;
