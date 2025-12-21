@@ -28,6 +28,7 @@ footer p:nth-of-type(3) {
     font-size: 0.7rem; /* Encore plus petit */
 }
 
+/* Balises */
 
 h1, h2 {
   color: #FF0000;
@@ -37,6 +38,10 @@ h1, h2 {
 
 p, h3, h4, li {
   color:#ffffff;
+}
+
+h3 {
+  text-decoration: underline;
 }
 
 
@@ -58,6 +63,11 @@ p, h3, h4, li {
 .encadre_regle {
   border: 5px double #FFFF00;
   margin: 20px;
+}
+
+.perso {
+  color: #FFDDDD;
+  text-decoration: underline;
 }
 
 /* Liens modifications */
