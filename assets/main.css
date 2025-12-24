@@ -36,7 +36,7 @@ h1, h2 {
   letter-spacing: 0.5px;
 }
 
-p, h3, h4, li {
+p, h3, h4, h5, h6, li {
   color:#ffffff;
 }
 
@@ -55,8 +55,14 @@ h3 {
   align-items: center; /* centre verticalement image et paragraphe */  
 }
 
+.gauche_droite_plus {
+  display: flex;
+  gap: 150px;           /* espace entre texte et image */
+  align-items: center; /* centre verticalement image et paragraphe */  
+}
+
 .encadre {
-  border: 3px solid #ffffff;
+  border: 3px outset #ffffff;
   padding: 30px;
 }
 
@@ -76,7 +82,7 @@ h3 {
   justify-content: space-between; /* sépare les iframes à gauche et à droite */
   gap: 20px;                       /* espace fixe entre elles */
 
-  border: 2px solid #ffffff;       /* bordure autour des deux widgets */
+  border: 2px solid #ffffff;
   border-radius: 10px;             
   overflow: hidden;                
 
@@ -98,10 +104,14 @@ h3 {
 /* Liens modifications */
 main a {
   text-decoration: none;
-  color: #5ab0f7;text-decoration: none;transition: color 0.3s;
+  color: #5ab0f7;
+  text-decoration: none;
+  transition: color 0.3s;
 }
+
 main a:hover {
-  text-decoration: underline;color: #ffffff;
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 .lien-nothing a {
@@ -266,6 +276,7 @@ summary {
   font-weight: bold;
   list-style: none;
   position: relative;
+  color:#ffffff;
 }
 
 /* ============================================= */
