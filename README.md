@@ -74,4 +74,6 @@ Contact : mondeoria.official@gmail.com
 
 Merci à tous ceux qui contribuent à l’évolution du lore et à la vie du monde d’Oria.
 
+![Logo Oria Production](images_all/logo/oria_production.png)
+
 © 2025 Oria - Empire Nexara
