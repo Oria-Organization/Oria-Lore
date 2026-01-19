@@ -1,0 +1,282 @@
+/* CSS principal: aux balises */
+body {
+  background: linear-gradient(to bottom right, #0b0b0b, #5f0000);
+  background-attachment: fixed;
+
+  font-family: 'Spectral', serif;
+  line-height: 1.6;
+}
+
+main {
+  width: 95%;
+  max-width: 1000px;
+  margin: 2% auto;
+  padding: 2rem;
+}
+
+/* Dans le footer */
+footer {
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer p:nth-of-type(2) {
+    font-size: 0.85rem; /* Un peu plus petit */
+}
+
+footer p:nth-of-type(3) {
+    font-size: 0.7rem; /* Encore plus petit */
+}
+
+/* Balises */
+
+h1, h2 {
+  color: #FF0000;
+  font-family: 'Marcellus', serif;
+  letter-spacing: 0.5px;
+}
+
+p, h3, h4, h5, h6, li {
+  color:#ffffff;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* === Class === */
+.gauche_droite {
+  display: flex;
+  gap: 20px;           /* espace entre texte et image */
+  align-items: center; /* centre verticalement image et paragraphe */  
+}
+
+.gauche_droite_plus {
+  display: flex;
+  gap: 150px;           /* espace entre texte et image */
+  align-items: center; /* centre verticalement image et paragraphe */  
+}
+
+.encadre {
+  border: 3px outset #ffffff;
+  padding: 30px;
+}
+
+.encadre_regle {
+  border: 5px double #FFFF00;
+  margin: 20px;
+}
+
+.perso {
+  color: #FFDDDD;
+  text-decoration: underline;
+}
+
+/* widget */
+.widget-lore {
+  display: flex;
+  justify-content: space-between; /* sépare les iframes à gauche et à droite */
+  gap: 20px;                       /* espace fixe entre elles */
+
+  border: 2px solid #ffffff;
+  border-radius: 10px;             
+  overflow: hidden;                
+
+  padding: 10px;                   /* espace interne pour que ça respire */
+  width: max-content;              /* s’adapte aux iframes */
+  margin: 0 auto;                  /* centre le conteneur sur la page */
+}
+
+.widget-lore:hover {
+  transform: scale(1.02); /* effet léger au survol */
+}
+
+.widget-lore iframe {
+  display: block;  /* supprime le petit espace en dessous */
+  border: none;    /* supprime la bordure par défaut de l'iframe */
+}
+
+
+/* Liens modifications */
+main a {
+  text-decoration: none;
+  color: #5ab0f7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.lien-nothing a {
+  font-family: 'Spectral', serif;
+  color:#ffffff;
+}
+
+.lien-nothing a:hover {
+  text-decoration: none;
+  font-family: 'Spectral', serif;
+}
+
+/* ============================================= */
+
+
+
+
+
+/* === Barre de navigation === */
+header {
+  list-style-type: none; /* Pour éviter d'avoir des puces */
+  flex-wrap: wrap; /* Adaptation */
+
+  display: flex;
+  top: 0;
+  position: sticky;
+
+  background-color: #0b0b0b;
+}
+
+header li a {
+  display: block;
+
+  color: white;
+  font-family: 'Marcellus', serif;
+  text-decoration: none;
+
+  padding: 14px 16px;
+}
+
+header li a:hover:not(.active) {
+  background-color: #1b1b1b; /* Couleur quand la souris passe dessus */
+}
+
+header li a.active {
+  background-color: #550000; /* Couleur de celle active */
+}
+
+/* Menu déroulant */
+.bloc_base {
+  color: white;
+  font-family: 'Marcellus', serif;
+
+  padding: 14px 16px;
+  border: none;
+
+  cursor: pointer; /* Curseur en forme de main */
+}
+
+.bloc-interne {
+  background-color: #0b0b0b;
+
+  display: none; /* Caché par défaut */
+  position: absolute; 
+
+  min-width: 200px;
+}
+
+.bloc-interne a {
+  color: white; 
+  text-decoration: none;
+
+  display: block;   /* Affichage en bloc pour prendre toute la largeur */
+}
+
+.bloc:hover .bloc-interne {
+  display: block; /* Affiche le menu au survol */
+}
+
+.bloc:hover .bloc_base {
+  background-color: #1b1b1b;
+}
+/* ============================================= */
+
+
+
+
+
+/* === ONGLETS === */
+
+/* Conteneur des onglets */
+.onglets {
+  display: flex;
+  margin-bottom: 0;
+}
+
+/* Boutons d’onglets */
+.tab-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  margin: 0;
+
+  background-color: #0b0b0b;
+  color: white;
+  font-family: 'Marcellus', serif;
+
+  border: 1px solid #2b2b2b;
+  border-radius: 6px;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hover */
+.tab-btn:hover {
+  background-color: #1b1b1b;
+}
+
+/* Onglet actif */
+.tab-btn.actif {
+  background-color: #550000;
+}
+
+/* Contenu caché */
+.tab-contenu {
+  display: none;
+
+  padding: 15px;
+
+  background: none;
+  border: 1px solid #2b2b2b;
+  border-radius: 6px;
+}
+
+/* Contenu actif */
+.tab-contenu.actif {
+  display: block;
+}
+
+/* ============================================= */
+
+
+
+
+
+/* === BARRE DETAILS === */
+/* détails */
+details {
+  background: none;
+  border: 5px solid #2b2b2b;
+  border-radius: 8px;
+}
+
+details div {
+  padding: 0 10px;
+}
+
+/* summary */
+summary {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+  position: relative;
+  color:#ffffff;
+}
+
+/* ============================================= */
