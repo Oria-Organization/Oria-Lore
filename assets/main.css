@@ -1,184 +1,282 @@
-/* Base */
+/* CSS principal: aux balises */
 body {
-    font-family: Arial, sans-serif;
-    background: #0f0f0f;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 2em;
+  background: linear-gradient(to bottom right, #0b0b0b, #5f0000);
+  background-attachment: fixed;
+
+  font-family: 'Spectral', serif;
+  line-height: 1.6;
 }
 
-h1 { color: #ff4b4b; }
-
-a {
-    color: #5ab0f7;
-    text-decoration: none;
-    transition: color 0.3s;
+main {
+  width: 95%;
+  max-width: 1000px;
+  margin: 2% auto;
+  padding: 2rem;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #ffffff;
+/* Dans le footer */
+footer {
+  text-align: center;
+  font-size: 1rem;
 }
 
-/* Pied de page */
-footer p:last-child { text-align: center; margin: 0.5em 0; }
-
-/* Sections / details */
-.section { margin-top: 2em; }
-
-details {
-    border: 1px solid #444;
-    border-radius: 8px;
-    margin: 10px 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    background: #1a1a1a;
+footer p:nth-of-type(2) {
+    font-size: 0.85rem; /* Un peu plus petit */
 }
 
-summary {
-    padding: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    list-style: none;
-    position: relative;
+footer p:nth-of-type(3) {
+    font-size: 0.7rem; /* Encore plus petit */
 }
 
-summary::after {
-    content: "▶";
-    position: absolute;
-    right: 10px;
-    transition: transform 0.3s ease;
+/* Balises */
+
+h1, h2 {
+  color: #FF0000;
+  font-family: 'Marcellus', serif;
+  letter-spacing: 0.5px;
 }
 
-details[open] summary::after { transform: rotate(90deg); }
-
-details div {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 10px;
-    transition: max-height 0.5s ease, padding 0.3s ease;
+p, h3, h4, h5, h6, li {
+  color:#ffffff;
 }
 
-details[open] div { max-height: none; padding: 10px; }
-
-/* Tabs */
-.tab { display: flex; border-bottom: 1px solid #444; }
-
-.tab button {
-    background: none;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    color: #e0e0e0;
-    font-weight: bold;
-    transition: color 0.3s, border-bottom 0.3s;
+h3 {
+  text-decoration: underline;
 }
 
-.tab button:hover { color: #ff4d4d; }
 
-.tab button.active {
-    border-bottom: 3px solid #ff4d4d;
-    color: #ff4d4d;
+
+
+
+/* === Class === */
+.gauche_droite {
+  display: flex;
+  gap: 20px;           /* espace entre texte et image */
+  align-items: center; /* centre verticalement image et paragraphe */  
 }
 
-.tabcontent, .tabcontent1, .tabcontent2 { display: none; padding: 20px; animation: fadeEffect 0.5s; }
-
-@keyframes fadeEffect { from {opacity:0;} to{opacity:1;} }
-
-/* Blocs flexibles */
-.bloc {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    position: relative; /* Nécessaire pour sous-menu */
+.gauche_droite_plus {
+  display: flex;
+  gap: 150px;           /* espace entre texte et image */
+  align-items: center; /* centre verticalement image et paragraphe */  
 }
 
-.bloc .texte { flex: 1; }
-
-.bloc .image img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
+.encadre {
+  border: 3px outset #ffffff;
+  padding: 30px;
 }
 
-/* NAV */
-.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333333;
-    display: flex;
+.encadre_regle {
+  border: 5px double #FFFF00;
+  margin: 20px;
 }
 
-.nav li {
-    position: relative;
+.perso {
+  color: #FFDDDD;
+  text-decoration: underline;
 }
 
-.nav li a, .bloc_base {
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
+/* widget */
+.widget-lore {
+  display: flex;
+  justify-content: space-between; /* sépare les iframes à gauche et à droite */
+  gap: 20px;                       /* espace fixe entre elles */
+
+  border: 2px solid #ffffff;
+  border-radius: 10px;             
+  overflow: hidden;                
+
+  padding: 10px;                   /* espace interne pour que ça respire */
+  width: max-content;              /* s’adapte aux iframes */
+  margin: 0 auto;                  /* centre le conteneur sur la page */
 }
 
-.nav li a:hover:not(.active), .bloc:hover .bloc_base {
-    background-color: #111111;
+.widget-lore:hover {
+  transform: scale(1.02); /* effet léger au survol */
 }
 
-.nav li a.active { background-color: #000334; }
+.widget-lore iframe {
+  display: block;  /* supprime le petit espace en dessous */
+  border: none;    /* supprime la bordure par défaut de l'iframe */
+}
+
+
+/* Liens modifications */
+main a {
+  text-decoration: none;
+  color: #5ab0f7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.lien-nothing a {
+  font-family: 'Spectral', serif;
+  color:#ffffff;
+}
+
+.lien-nothing a:hover {
+  text-decoration: none;
+  font-family: 'Spectral', serif;
+}
+
+/* ============================================= */
+
+
+
+
+
+/* === Barre de navigation === */
+header {
+  list-style-type: none; /* Pour éviter d'avoir des puces */
+  flex-wrap: wrap; /* Adaptation */
+
+  display: flex;
+  top: 0;
+  position: sticky;
+
+  background-color: #0b0b0b;
+}
+
+header li a {
+  display: block;
+
+  color: white;
+  font-family: 'Marcellus', serif;
+  text-decoration: none;
+
+  padding: 14px 16px;
+}
+
+header li a:hover:not(.active) {
+  background-color: #1b1b1b; /* Couleur quand la souris passe dessus */
+}
+
+header li a.active {
+  background-color: #550000; /* Couleur de celle active */
+}
 
 /* Menu déroulant */
-.bloc-contenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    flex-direction: column;
-    background-color: #333333;
-    min-width: 180px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 10;
+.bloc_base {
+  color: white;
+  font-family: 'Marcellus', serif;
+
+  padding: 14px 16px;
+  border: none;
+
+  cursor: pointer; /* Curseur en forme de main */
 }
 
-.bloc-contenu a {
-    padding: 12px 16px;
+.bloc-interne {
+  background-color: #0b0b0b;
+
+  display: none; /* Caché par défaut */
+  position: absolute; 
+
+  min-width: 200px;
 }
 
-.bloc-contenu a:hover { background-color: #111111; }
+.bloc-interne a {
+  color: white; 
+  text-decoration: none;
 
-/* Sous-menu : s'affiche à droite du parent */
-.bloc-contenu .bloc-contenu.sous-menu {
-    top: 0;
-    left: 100%; /* s'affiche à droite du parent */
-    position: absolute;
-    display: none;
-    min-width: 200px;
+  display: block;   /* Affichage en bloc pour prendre toute la largeur */
 }
 
-/* Affichage au hover du parent */
-.bloc-contenu .bloc:hover > .sous-menu {
-    display: block;
+.bloc:hover .bloc-interne {
+  display: block; /* Affiche le menu au survol */
 }
 
-/* Affichage au hover desktop */
-@media (min-width: 601px) {
-    .bloc:hover .bloc-contenu { display: flex; }
+.bloc:hover .bloc_base {
+  background-color: #1b1b1b;
+}
+/* ============================================= */
+
+
+
+
+
+/* === ONGLETS === */
+
+/* Conteneur des onglets */
+.onglets {
+  display: flex;
+  margin-bottom: 0;
 }
 
-/* Responsive mobile */
-@media (max-width: 600px) {
-    .nav { flex-direction: column; align-items: flex-start; }
-    .nav li a, .bloc_base {
-        width: 100%;
-        text-align: left;
-        box-sizing: border-box;
-    }
-    .bloc { flex-direction: column; gap: 0; }
-    .bloc-contenu { position: relative; top: auto; left: auto; box-shadow: none; }
+/* Boutons d’onglets */
+.tab-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  margin: 0;
+
+  background-color: #0b0b0b;
+  color: white;
+  font-family: 'Marcellus', serif;
+
+  border: 1px solid #2b2b2b;
+  border-radius: 6px;
+
+  cursor: pointer;
+  user-select: none;
 }
+
+/* Hover */
+.tab-btn:hover {
+  background-color: #1b1b1b;
+}
+
+/* Onglet actif */
+.tab-btn.actif {
+  background-color: #550000;
+}
+
+/* Contenu caché */
+.tab-contenu {
+  display: none;
+
+  padding: 15px;
+
+  background: none;
+  border: 1px solid #2b2b2b;
+  border-radius: 6px;
+}
+
+/* Contenu actif */
+.tab-contenu.actif {
+  display: block;
+}
+
+/* ============================================= */
+
+
+
+
+
+/* === BARRE DETAILS === */
+/* détails */
+details {
+  background: none;
+  border: 5px solid #2b2b2b;
+  border-radius: 8px;
+}
+
+details div {
+  padding: 0 10px;
+}
+
+/* summary */
+summary {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+  position: relative;
+  color:#ffffff;
+}
+
+/* ============================================= */
