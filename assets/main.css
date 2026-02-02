@@ -138,7 +138,6 @@ header {
   display: flex;
   top: 0;
   position: sticky;
-  z-index: 1000; /* l'afficher au dessus de tout */
 
   background-color: #0b0b0b;
 }
@@ -236,21 +235,27 @@ header li a.active {
   background-color: #550000;
 }
 
-/* Contenu caché */
+/* Contenu des onglets */
 .tab-contenu {
-  display: none;
+  display: block;        /* toujours dans le DOM pour IA */
+  visibility: hidden;    /* masque pour l’utilisateur */
+  height: 0;             /* ne prend pas de place */
+  overflow: hidden;      /* empêche le contenu de dépasser */
 
-  padding: 15px;
-
+  padding: 0;            /* retire le padding quand inactif */
   background: none;
-  border: 1px solid #2b2b2b;
-  border-radius: 6px;
+  border: none;
 }
 
 /* Contenu actif */
 .tab-contenu.actif {
-  display: block;
+  visibility: visible;   /* visible pour l’utilisateur */
+  height: auto;          /* prend sa hauteur normale */
+  padding: 15px;         /* padding normal */
+  border: 1px solid #2b2b2b; /* bordure normale */
+  border-radius: 6px;    /* conserve ton style */
 }
+
 
 /* ============================================= */
 
