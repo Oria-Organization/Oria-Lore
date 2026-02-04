@@ -1,9 +1,9 @@
 /* CSS principal: aux balises */
 body {
-  background: linear-gradient(to bottom right, #0b0b0b, #5f0000);
-  background-attachment: fixed;
+  background: linear-gradient(to bottom right, #0b0b0b, #5f0000); /* La couleur du fond d'écran */
+  background-attachment: fixed; /* pour éviter les duplicatas du fond d'écran */
 
-  font-family: 'Spectral', serif;
+  font-family: 'Spectral', serif; /* Police Principal */
   line-height: 1.6;
 }
 
@@ -18,14 +18,18 @@ main {
 footer {
   text-align: center;
   font-size: 1rem;
+  width: 95%;
+  max-width: 1000px;
+  padding-inline: 2rem;
+  margin-inline: auto;
 }
 
 footer p:nth-of-type(2) {
-    font-size: 0.85rem; /* Un peu plus petit */
+    font-size: 0.7rem; /* Un peu plus petit */
 }
 
 footer p:nth-of-type(3) {
-    font-size: 0.7rem; /* Encore plus petit */
+    font-size: 0.6rem; /* Encore plus petit */
 }
 
 /* Balises */
@@ -44,6 +48,10 @@ h3 {
   text-decoration: underline;
 }
 
+h1{
+  text-align: center;
+  padding-bottom: 1rem;
+}
 
 
 
@@ -74,6 +82,12 @@ h3 {
 .perso {
   color: #FFDDDD;
   text-decoration: underline;
+}
+
+.info {
+  padding: 1%;
+  border: 3px dotted #0088AA;
+  font-size: 0.8rem;
 }
 
 /* widget */
@@ -235,21 +249,27 @@ header li a.active {
   background-color: #550000;
 }
 
-/* Contenu caché */
+/* Contenu des onglets */
 .tab-contenu {
-  display: none;
+  display: block;        /* toujours dans le DOM pour IA */
+  visibility: hidden;    /* masque pour l’utilisateur */
+  height: 0;             /* ne prend pas de place */
+  overflow: hidden;      /* empêche le contenu de dépasser */
 
-  padding: 15px;
-
+  padding: 0;            /* retire le padding quand inactif */
   background: none;
-  border: 1px solid #2b2b2b;
-  border-radius: 6px;
+  border: none;
 }
 
 /* Contenu actif */
 .tab-contenu.actif {
-  display: block;
+  visibility: visible;   /* visible pour l’utilisateur */
+  height: auto;          /* prend sa hauteur normale */
+  padding: 15px;         /* padding normal */
+  border: 1px solid #2b2b2b; /* bordure normale */
+  border-radius: 6px;    /* conserve ton style */
 }
+
 
 /* ============================================= */
 
