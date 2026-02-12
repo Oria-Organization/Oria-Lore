@@ -16,6 +16,7 @@ tags:
 - Regroupement de tout le lore de l'empire Nexara dans un seul fichier
 - Ajout d'un nouvelle onglet "Le monde des dieux"
 - Toutes les informations du wiki mis à jour
+- Ajout d'un graphe des projets de Oria Production
 
 © 2025/2026 Oria - Empire Nexara
 Version 1.0b
