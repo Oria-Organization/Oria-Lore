@@ -29,25 +29,46 @@ Objectifs principaux:
 Oria n’est pas seulement une histoire à lire, c’est un monde vivant, où chaque élément a sa place et contribue à l’expérience globale.
 
 
-## Structures du REPO
+## Structure du REPO
 ```
 Oria-Lore/
-├── .nojekyll
 ├── README.md
 ├── index.html
-├── nexara/
-│   ├── empire-nexara.html
-│   └── images/
-│       ├── famille/
-│       └── logo/
-│           └── nexara-logo.png
+├── sitemap.xml
+├── assets/
+│   ├── main.css
+│   └── main.js
 ├── autres/
 │   ├── colab.html
-│   ├── credits.html
+│   ├── credit.html
 │   └── droits.html
-└── assets/
-    ├── main.css
-    └── main.js
+├── graphe/
+│   ├── graphe.css
+│   ├── graphe.html
+│   ├── graphe.js
+│   └── contenu/
+│       ├── Annexes des mis à jour.md
+│       ├── Oria Organisation.md
+│       ├── Serveur discord - Empire Nexara.md
+│       ├── Wiki du lore d'Oria.md
+│       └── partenaires_discord/
+│           ├── Fear And Love.md
+│           ├── Neko's Coffee.md
+│           └── Serveur des crêpes.md
+├── images_all/
+│   ├── oria_univers.png
+│   └── logo/
+│       └── oria_production.png
+└── nexara/
+    ├── empire-nexara.html
+    └── images/
+        ├── famille/
+        │   └── base.txt
+        └── logo/
+            ├── nexara-logo-cercle.png
+            ├── nexara-logo.png
+            └── org_images/
+                └── logo_scp.png
 ```
 
 ## Fonctionnement des versions
