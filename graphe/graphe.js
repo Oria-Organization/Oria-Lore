@@ -1,11 +1,11 @@
 const fichiers = [
-  "contenu/partenaires_discord/Fear And Love.md",
-  "contenu/partenaires_discord/Neko's Coffee.md",
-  "contenu/partenaires_discord/Serveur des crêpes.md",
-  "contenu/Annexes des mis à jour.md",
-  "contenu/Oria Organisation.md",
-  "contenu/Serveur discord - Empire Nexara.md",
-  "contenu/Wiki du lore d'Oria.md"
+  "graphe/contenu/partenaires_discord/Fear And Love.md",
+  "graphe/contenu/partenaires_discord/Neko's Coffee.md",
+  "graphe/contenu/partenaires_discord/Serveur des crêpes.md",
+  "graphe/contenu/Annexes des mis à jour.md",
+  "graphe/contenu/Oria Organisation.md",
+  "graphe/contenu/Serveur discord - Empire Nexara.md",
+  "graphe/contenu/Wiki du lore d'Oria.md"
 ];
 
 let documents = {};
@@ -35,9 +35,14 @@ function extraireFrontMatter(texte) {
 }
 
 async function chargerFichiers() {
+  let fichiersCharges = 0;
+
   for (const fichier of fichiers) {
     const response = await fetch(fichier);
-    if (!response.ok) continue;
+    if (!response.ok) {
+      console.warn(`Impossible de charger ${fichier} (${response.status})`);
+      continue;
+    }
 
     const texte = await response.text();
     const { nom } = extraireFrontMatter(texte);
@@ -54,6 +59,15 @@ async function chargerFichiers() {
         from: normaliser(nom),
         to: normaliser(match[1])
       });
+    }
+
+    fichiersCharges += 1;
+  }
+
+  if (fichiersCharges === 0) {
+    const note = document.getElementById("graph-note");
+    if (note) {
+      note.textContent = "Aucun document chargé. Vérifiez les chemins des fichiers Markdown.";
     }
   }
 
@@ -85,27 +99,7 @@ function afficherDocument(nom) {
 
   document.getElementById("doc-content").innerHTML =
     marked.parse(contenu);
-}
-
-function dessinerGraphe() {
-  const svg = document.getElementById("graph");
-  svg.innerHTML = "";
-
-  const noms = Object.keys(documents);
-  const centreX = 350;
-  const centreY = 250;
-  const rayon = 150;
-
-  let positions = {};
-
-  noms.forEach((nom, i) => {
-    const angle = (i / noms.length) * 2 * Math.PI;
-    const x = centreX + rayon * Math.cos(angle);
-    const y = centreY + rayon * Math.sin(angle);
-    positions[nom] = { x, y };
-  });
-
-  liens.forEach(lien => {
+  function dessinerGraphe() {
     if (!positions[lien.from] || !positions[lien.to]) return;
 
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
@@ -115,7 +109,7 @@ function dessinerGraphe() {
     line.setAttribute("y2", positions[lien.to].y);
     line.setAttribute("stroke", "#ffffff");
     svg.appendChild(line);
-  });
+  };
 
   noms.forEach(nom => {
     const { x, y } = positions[nom];
