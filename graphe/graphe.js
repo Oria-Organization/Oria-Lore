@@ -1,12 +1,23 @@
 const fichiers = [
-  "contenu/partenaires_discord/Fear And Love.md",
-  "contenu/partenaires_discord/Neko's Coffee.md",
-  "contenu/partenaires_discord/Serveur des crêpes.md",
-  "contenu/Annexes des mis à jour.md",
-  "contenu/Oria Organisation.md",
-  "contenu/Serveur discord - Empire Nexara.md",
-  "contenu/Wiki du lore d'Oria.md"
+  "partenaires_discord/Fear And Love.md",
+  "partenaires_discord/Neko's Coffee.md",
+  "partenaires_discord/Serveur des crêpes.md",
+  "Annexes des mis à jour.md",
+  "Oria Organisation.md",
+  "Serveur discord - Empire Nexara.md",
+  "Wiki du lore d'Oria.md"
 ];
+
+function obtenirCheminContenu() {
+  const cheminPage = window.location.pathname;
+  const cheminBase = new URL(document.baseURI).pathname;
+
+  if (cheminPage.includes("/Oria-Lore/") || cheminBase.includes("/Oria-Lore/")) {
+    return "/Oria-Lore/graphe/contenu/";
+  }
+
+  return "/graphe/contenu/";
+}
 
 let documents = {};
 let liens = [];
@@ -35,9 +46,16 @@ function extraireFrontMatter(texte) {
 }
 
 async function chargerFichiers() {
+  let fichiersCharges = 0;
+
+  const baseContenu = obtenirCheminContenu();
+
   for (const fichier of fichiers) {
-    const response = await fetch(fichier);
-    if (!response.ok) continue;
+    const response = await fetch(`${baseContenu}${fichier}`);
+    if (!response.ok) {
+      console.warn(`Impossible de charger ${baseContenu}${fichier} (${response.status})`);
+      continue;
+    }
 
     const texte = await response.text();
     const { nom } = extraireFrontMatter(texte);
@@ -54,6 +72,15 @@ async function chargerFichiers() {
         from: normaliser(nom),
         to: normaliser(match[1])
       });
+    }
+
+    fichiersCharges += 1;
+  }
+
+  if (fichiersCharges === 0) {
+    const note = document.getElementById("graph-note");
+    if (note) {
+      note.textContent = "Aucun document chargé. Vérifiez les chemins des fichiers Markdown.";
     }
   }
 

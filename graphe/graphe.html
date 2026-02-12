@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oria Lore - Graphe</title>
 
-  <link rel="stylesheet" href="graphe.css">
-  <link rel="icon" type="image/png" href="nexara/images/logo/nexara-logo-cercle.png">
   <base href="/Oria-Lore/">
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="graphe/graphe.css">
+  <link rel="icon" type="image/png" href="nexara/images/logo/nexara-logo-cercle.png">
 
-  <script src="graphe.js" defer></script>
+  <script src="graphe/graphe.js" defer></script>
   <!-- Librairie Markdown -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
@@ -44,7 +45,7 @@
     <aside class="panneau carte">
       <h1>Carte des liens</h1>
       <svg id="graph" viewBox="0 0 700 500"></svg>
-      <p class="note">Cliquez sur un nœud.</p>
+      <p class="note" id="graph-note">Cliquez sur un nœud.</p>
     </aside>
 
   </main>
