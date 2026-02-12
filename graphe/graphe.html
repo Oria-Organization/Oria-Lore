@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oria Lore - Graphe</title>
+
+  <link rel="stylesheet" href="graphe.css">
+  <link rel="icon" type="image/png" href="nexara/images/logo/nexara-logo-cercle.png">
+  <base href="/Oria-Lore/">
+
+  <script src="graphe.js" defer></script>
+  <!-- Librairie Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="nexara/empire-nexara.html">Empire Nexara</a></li>
+    <li><a href="dieux/monde_dieux.html">Monde des Dieux</a></li>
+    <li class="bloc">
+      <a class="bloc_base">Crédits et Autres...</a>
+      <div class="bloc-interne">
+        <a href="autres/credit.html">Crédits</a>
+        <a href="autres/droits.html">Droits d'Auteur</a>
+        <a href="autres/colab.html">Collaboration et Inspirations</a>
+      </div>
+    </li>
+  </header>
+
+  <main class="graphe-layout">
+
+    <aside class="panneau docs">
+      <h1>Documents</h1>
+      <ul id="doc-list"></ul>
+    </aside>
+
+    <section class="panneau lecture">
+      <h1 id="doc-title">Sélectionnez un document</h1>
+      <article id="doc-content"></article>
+    </section>
+
+    <aside class="panneau carte">
+      <h1>Carte des liens</h1>
+      <svg id="graph" viewBox="0 0 700 500"></svg>
+      <p class="note">Cliquez sur un nœud.</p>
+    </aside>
+
+  </main>
+</body>
+</html>
