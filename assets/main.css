@@ -88,6 +88,15 @@ h1{
 
 .encadre_regle {
   border: 5px double #FFFF00;
+  padding: 2rem;
+}
+
+.encadre_regle h1,h2 {
+  margin-top: auto;
+}
+
+.encadre_regle p{
+  margin-block: auto;
 }
 
 .perso {
