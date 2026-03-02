@@ -4,8 +4,9 @@ types: Serveur discord
 tags: Partenaire
 ---
 
-#Partenaires
 ## Présentation
+
+Plongez dans La peur et l'amour, un monde fantastique peuplé de Yokai où Elliotte et Liam vous entraînent entre frissons, rires et aventures romantiques à explorer dans le DreamBreak – et bientôt un jeu PC ! (Description adapté à celle de sa pub)
 
 ## Serveur Discord
 
